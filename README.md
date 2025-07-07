@@ -37,13 +37,21 @@ dotnet restore
 ```
 
 ### 3. Run the application
+
 ```bash
-dotnet run --project NumberConvertion
+cd NumberConvertion
+dotnet run
+cd ..
 ```
 
+Open your browser to the URL shown in the terminal (typically http://localhost:5000 or similar)
+
 ### 4. Run tests
+
 ```bash
+cd NumberConversion.Tests
 dotnet test
+cd ..
 ```
 
 ## Project Structure
@@ -74,17 +82,6 @@ tech-one/
 | `1.01` | `ONE DOLLAR AND ONE CENT` |
 | `123.45` | `ONE HUNDRED AND TWENTY-THREE DOLLARS AND FORTY-FIVE CENTS` |
 
-## Development
-
-### Build the solution
-```bash
-dotnet build
-```
-
-### Run tests
-```bash
-dotnet test
-```
 
 ## Troubleshooting
 

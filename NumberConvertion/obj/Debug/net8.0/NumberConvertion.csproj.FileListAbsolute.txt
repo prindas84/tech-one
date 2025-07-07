@@ -1,3 +1,9 @@
+C:\Users\matth\OneDrive\Desktop\Projects\tech-one\NumberConvertion\obj\Debug\net8.0\NumberConvertion.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\matth\OneDrive\Desktop\Projects\tech-one\NumberConvertion\obj\Debug\net8.0\NumberConvertion.AssemblyInfoInputs.cache
+C:\Users\matth\OneDrive\Desktop\Projects\tech-one\NumberConvertion\obj\Debug\net8.0\NumberConvertion.AssemblyInfo.cs
+C:\Users\matth\OneDrive\Desktop\Projects\tech-one\NumberConvertion\obj\Debug\net8.0\NumberConvertion.csproj.CoreCompileInputs.cache
+C:\Users\matth\OneDrive\Desktop\Projects\tech-one\NumberConvertion\obj\Debug\net8.0\NumberConvertion.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\matth\OneDrive\Desktop\Projects\tech-one\NumberConvertion\obj\Debug\net8.0\NumberConvertion.sourcelink.json
 C:\Users\matth\OneDrive\Desktop\Projects\tech-one\NumberConvertion\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\matth\OneDrive\Desktop\Projects\tech-one\NumberConvertion\bin\Debug\net8.0\appsettings.json
 C:\Users\matth\OneDrive\Desktop\Projects\tech-one\NumberConvertion\bin\Debug\net8.0\NumberConvertion.staticwebassets.runtime.json
@@ -6,11 +12,6 @@ C:\Users\matth\OneDrive\Desktop\Projects\tech-one\NumberConvertion\bin\Debug\net
 C:\Users\matth\OneDrive\Desktop\Projects\tech-one\NumberConvertion\bin\Debug\net8.0\NumberConvertion.runtimeconfig.json
 C:\Users\matth\OneDrive\Desktop\Projects\tech-one\NumberConvertion\bin\Debug\net8.0\NumberConvertion.dll
 C:\Users\matth\OneDrive\Desktop\Projects\tech-one\NumberConvertion\bin\Debug\net8.0\NumberConvertion.pdb
-C:\Users\matth\OneDrive\Desktop\Projects\tech-one\NumberConvertion\obj\Debug\net8.0\NumberConvertion.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\matth\OneDrive\Desktop\Projects\tech-one\NumberConvertion\obj\Debug\net8.0\NumberConvertion.AssemblyInfoInputs.cache
-C:\Users\matth\OneDrive\Desktop\Projects\tech-one\NumberConvertion\obj\Debug\net8.0\NumberConvertion.AssemblyInfo.cs
-C:\Users\matth\OneDrive\Desktop\Projects\tech-one\NumberConvertion\obj\Debug\net8.0\NumberConvertion.csproj.CoreCompileInputs.cache
-C:\Users\matth\OneDrive\Desktop\Projects\tech-one\NumberConvertion\obj\Debug\net8.0\NumberConvertion.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\matth\OneDrive\Desktop\Projects\tech-one\NumberConvertion\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\matth\OneDrive\Desktop\Projects\tech-one\NumberConvertion\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\matth\OneDrive\Desktop\Projects\tech-one\NumberConvertion\obj\Debug\net8.0\staticwebassets\msbuild.NumberConvertion.Microsoft.AspNetCore.StaticWebAssets.props

@@ -20,7 +20,7 @@
                     @bind:event="oninput"
                     placeholder="123456.78 or 123456"
                     maxlength="18" />
-                <p class="small text-muted mt-2">Format: dddddd.dd or dddddd<br>Range: 0 &lt; n &lt; 1000000000000000.00</p>
+                <p class="small text-muted mt-2">Format: dddddd.dd or dddddd<br>Range: 0 &le; n &lt; 1000000000000000.00</p>
                 
                 @if (!isValid && !string.IsNullOrEmpty(errorMessage))
                 {

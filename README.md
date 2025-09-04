@@ -1,6 +1,6 @@
 # Number Conversion Application
 
-A .NET 8 Blazor Server application that converts numeric dollar amounts into written English text.
+A .NET 9 Blazor Server application that converts numeric dollar amounts into written English text.
 
 ## What it does
 
@@ -15,7 +15,7 @@ Converts numbers like `123.45` into `ONE HUNDRED AND TWENTY-THREE DOLLARS AND FO
 
 ## Requirements
 
-- [.NET 8.0 SDK](https://dotnet.microsoft.com/download/dotnet/8.0)
+- [.NET 9.0 SDK](https://dotnet.microsoft.com/download/dotnet/9.0)
 - Git
 
 Check if you have .NET installed:
@@ -95,4 +95,4 @@ dotnet test
 
 ---
 
-Built with .NET 8 and Blazor Server
+Built with .NET 9 and Blazor Server

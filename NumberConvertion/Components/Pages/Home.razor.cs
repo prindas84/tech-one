@@ -98,11 +98,17 @@ namespace NumberConvertion.Components.Pages
                     tempCount--;
                 }
 
+                // Account for 0 edge case
+                if (wholeNumber == "0")
+                {
+                    convertedString = "ZERO";
+                }
+
                 // Assign the correct dollar version
                 convertedString += long.Parse(wholeNumber) == 1 ? " DOLLAR" : " DOLLARS";
 
                 // Process decimal number. Assign correct cent version
-                if (!string.IsNullOrEmpty(decimalNumber))
+                if (!string.IsNullOrEmpty(decimalNumber) && decimalNumber != "00")
                 {
                     convertedString += " AND " + ConvertGroup(decimalNumber) + (decimalNumber == "01" ? " CENT" : " CENTS");
                 }
@@ -115,9 +121,7 @@ namespace NumberConvertion.Components.Pages
             string numberString = "";
             int length = number.Length;
             int position = 0;
-            int hundredsColumn = 0;
-            int tensColumn = 0;
-            int onesColumn = 0;
+            int hundredsColumn = 0, tensColumn = 0, onesColumn = 0;
 
             // Process the hundreds column
             if (length == 3)
@@ -173,12 +177,6 @@ namespace NumberConvertion.Components.Pages
             if (length == 1)
             {
                 onesColumn = number[position] - '0';
-
-                if (tensColumn == 0 && onesColumn == 0)
-                {
-                    return numberString;
-                }
-
                 numberString += numbers[onesColumn];
             }
 
@@ -224,18 +222,12 @@ namespace NumberConvertion.Components.Pages
                 return false;
             }
 
-            // Parse and check if value is positive and less than 1 quadrillion
+            // Parse and check if value is positive
             decimal result = decimal.Parse(inputValue);
-            if (result <= 0)
+            if (result < 0)
             {
                 isValid = false;
-                errorMessage = "Value must be positive.";
-                return false;
-            }
-            if (result >= 1000000000000000m)
-            {
-                isValid = false;
-                errorMessage = "Value must be less than 1 quadrillion.";
+                errorMessage = "Value cannot be negative.";
                 return false;
             }
 

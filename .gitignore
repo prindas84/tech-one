@@ -28,3 +28,4 @@ packages/
 *.nupkg
 *.snupkg
 .nuget/
+.fake

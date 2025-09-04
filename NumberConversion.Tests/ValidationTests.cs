@@ -158,10 +158,19 @@ namespace NumberConversion.Tests
             TestInvalidInput("-123", "Format: Maximum 15 digits before decimal");
             TestInvalidInput("+123", "Format: Maximum 15 digits before decimal");
         }
-        
+
         #endregion
-        
+
         #region Value Range Validation Tests
+        
+        [TestMethod]
+        [TestCategory("Range")]
+        [Priority(1)]
+        public void ValidRange_Zero_ShouldPass()
+        {
+            TestValidInput("0");
+            TestValidInput("0.00");
+        }
         
         [TestMethod]
         [TestCategory("Range")]
@@ -201,23 +210,6 @@ namespace NumberConversion.Tests
             // This is less than 1 quadrillion and passes both regex and value checks
             TestValidInput("999999999999999");
             TestValidInput("999999999999999.99"); // With decimals
-        }
-        
-        [TestMethod]
-        [TestCategory("Range")]
-        [Priority(1)]
-        public void InvalidRange_Zero_ShouldFail()
-        {
-            TestInvalidInput("0", "Value must be positive");
-            TestInvalidInput("0.00", "Value must be positive");
-        }
-        
-        [TestMethod]
-        [TestCategory("Range")]
-        [Priority(1)]
-        public void InvalidRange_BelowMinimum_ShouldFail()
-        {
-            TestInvalidInput("0", "Value must be positive");
         }
         
         [TestMethod]
@@ -404,10 +396,6 @@ namespace NumberConversion.Tests
                 
                 // Too many digits
                 {"1234567890123456", "Format: Maximum 15 digits before decimal"},
-                
-                // Zero values
-                {"0", "Value must be positive"},
-                {"0.00", "Value must be positive"},
                 
                 // 16+ digits (fail on format, never reach value check)
                 {"1000000000000000", "Format: Maximum 15 digits before decimal"} // 1 quadrillion (16 digits)
